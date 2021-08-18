@@ -1,5 +1,27 @@
 # React 复习
 
+## React Cli
+   start： 开启服务器
+   build： 生成静态产品
+   test：测试
+   eject：暴露原配置，无法回退
+
+## 项目结构
+   public --- 静态资源文件夹
+         favicon.icon 网站页签图标
+         index.html   主页面
+         logo192/logo512
+         manifest.json 应用加壳的配置文件
+         robots.txt    爬虫协议文件
+
+   src --- 源码文件夹
+           App.css      App组件的样式
+           App.js       App组件
+           App.test.js  用于给App做测试
+           index.css    样式
+           index.js     入口文件
+
+# React Cli init content
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
