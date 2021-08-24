@@ -1,32 +1,114 @@
 # React 复习
 
-## React Cli
-   start： 开启服务器
-   build： 生成静态产品
-   test：测试
-   eject：暴露原配置，无法回退
+### 简介
+    用于构建用户界面的JavaScript库
+    由Facebook开发，且开源
 
-## 项目结构
-   public --- 静态资源文件夹
-         favicon.icon 网站页签图标
-         index.html   主页面
-         logo192/logo512
-         manifest.json 应用加壳的配置文件
-         robots.txt    爬虫协议文件
+### 原生JS痛点
+    操作DOM繁琐，效率低
+    直接操作DOM，浏览器会进行大量重绘重排
+    没有组件化编码方案，代码复用率低2
 
-   src --- 源码文件夹
-           App.css      App组件的样式
-           App.js       App组件
-           App.test.js  用于给App做测试
-           index.css    样式
-           index.js     入口文件
+### React特点
+    采用组件化模式，声明式编码，提高开发效率和组件复用率
+    在React Native中可以使用React进行移动端开发
+    使用虚拟DOM和优秀的diffing算法，尽量减少与真实DOM的交互
 
-# React Cli init content
-# Getting Started with Create React App
+### 虚拟DOM 
+    本质是Object类型的对象
+    虚拟DOM较轻，真实DOM较重
+    最终会转化为真实DOM，呈现在页面中
+
+### JSX -> JavaScript XML
+    一种类似于XML的JS的扩展语法
+    本质 是React.createElement(components,props.,..children)方法 的一个语法糖
+    作用：用来简化创建虚拟DOM
+    
+    语法规则
+        定义DOM时，不要写引号
+        标签中混入JS表达式要用 { }
+        样式类名用 className
+        内联样式 style = {{ }}
+        只能有一个根标签
+        标签必须闭合
+        组件开头字母大写
+
+### 模块和组件定义
+#### 模块
+    向外提供特定的JS程序，一般就是一个JS文件
+    作用：复用JS，简化JS编写，提高JS运行效率
+#### 模块化
+    当应用都是由JS编写的
+#### 组件
+    用来实现局部功能的代码和资源的集合
+    作用：复用编码，简化项目编码，提高运行效率
+#### 组件化
+    当应用以多组件方式实现
+
+### 组件
+#### 函数式组件
+     
+
+#### 类式组件
+
+### State & Props & Refs 
+
+### 生命周期函数
+
+### React Cli
+    start： 开启服务器
+    build： 生成静态产品
+    test：测试
+    eject：暴露原配置，无法回退
+
+#### 项目结构
+    public --- 静态资源文件夹
+        favicon.icon 网站页签图标
+        index.html   主页面
+        logo192/logo512
+        manifest.json 应用加壳的配置文件
+        robots.txt    爬虫协议文件
+
+    src --- 源码文件夹
+        App.css      App组件的样式
+        App.js       App组件
+        App.test.js  用于给App做测试
+        index.css    样式
+        index.js     入口文件
+
+### React.Router 
+
+### Redux
+
+### Ant-design（antd） 
+    由蚂蚁金服开发的免费的React UI组件库
+
+### Hooks 
+
+### Fragments
+
+### Context 
+
+### PureComponent 
+
+### renderProps 
+
+### ErrorBoundary 
+
+---
+Author:Morgan.Liew 
+
+Email:morgan_liew@qq.com
+
+CreateTime: 2021-08-18
+
+---
+## React Cli init content
+### Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+### Available Scripts
 
 In the project directory, you can run:
 
