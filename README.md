@@ -96,12 +96,9 @@
 ### ErrorBoundary 
 
 ---
-Author:Morgan.Liew 
-
-Email:morgan_liew@qq.com
-
-CreateTime: 2021-08-18
-
+    Author:Morgan.Liew 
+    Email:morgan_liew@qq.com
+    CreateTime: 2021-08-18
 ---
 ## React Cli init content
 ### Getting Started with Create React App
