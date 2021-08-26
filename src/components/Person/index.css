@@ -1,0 +1,6 @@
+.person {
+    border: 2px solid #1e9eb3;
+    padding:25px;
+    margin-top: 5px;
+    cursor: pointer;
+}
