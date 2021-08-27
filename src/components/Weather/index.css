@@ -1,5 +1,9 @@
 .weather {
-    border: 2px solid #983680;
-    margin-top: 5px;
+    border: 2px solid #fffef8;
+    background-color: #983680;
+    box-shadow:0 0 5px #2d2e36;
+    border-radius:5px;
+    color: #fffef8;
+    margin-top: 10px;
     cursor: pointer;
 }

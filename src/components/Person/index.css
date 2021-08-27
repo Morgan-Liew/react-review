@@ -1,6 +1,30 @@
 .person {
-    border: 2px solid #1e9eb3;
+    border: 2px solid #fffef8;
+    background-color: #2486b9;
+    box-shadow:0 0 5px #2d2e36;
+    border-radius:5px;
+    color: #fffef8;
     padding:25px;
-    margin-top: 5px;
+    margin-top: 10px;
     cursor: pointer;
+}
+
+ .person2 {
+     border: 2px solid #fffef8;
+     background-color: #1e9eb3;
+     box-shadow:0 0 5px #2d2e36;
+     border-radius:5px;
+     color: #fffef8;
+     padding:25px;
+     margin-top: 10px;
+     cursor: pointer;
+ }
+
+ul h3{
+     display: inline;
+ }
+
+ul li{
+    margin-top: 10px;
+    margin-left: 20px;
 }

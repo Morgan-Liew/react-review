@@ -80,6 +80,42 @@
        1).每个组件对象都会有props属性
        2).组件标签的所有属性都保存在props中
 
+  #### 作用
+       1). 通过标签属性从组件外箱组件内传递变化的数据
+       2). 注意 组件内部不要修改props
+
+  #### 编码操作 
+       1).内部读取某个属性值
+  
+          this.props.name
+       
+       2).对props中的属性值进行类型限制和必要性限制
+          
+          Person.propTypes = {
+            name:React.PropTypes.string.isRequired
+          }
+
+       3).扩展属性 : 将对象的所有属性通过props传递
+          
+          <Person {...person}/>
+
+       4).默认属性值
+      
+          Person.defaultProps = {
+            age:18,
+            sex:'male'
+          }
+
+       5).组件类构造函数
+          
+          constructor(props){
+            super(props); // 有构造器必填
+            ...
+          }
+          
+
++ ### refs
+
 ### 生命周期函数
 
 ### React Cli
@@ -123,11 +159,17 @@
 ### ErrorBoundary 
 
 ---
-    Author:Morgan.Liew 
-    Email:morgan_liew@qq.com
-    CreateTime: 2021-08-18
+> **Author :**  Morgan.Liew   
+> **Email :**  morgan_liew@qq.com   
+> **CreateTime :**  2021-08-18 15:34  
+> **UpdateTime :**  2021-08-27 16:48
+
 ---
+---
+
 ## React Cli init content
+
+---
 ### Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
