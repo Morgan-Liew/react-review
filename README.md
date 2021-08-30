@@ -112,9 +112,36 @@
             super(props); // 有构造器必填
             ...
           }
-          
+  
++ ### refs 与 事件处理
+  #### 理解
+      组件内的标签可以定义ref属性来标识自己
 
-+ ### refs
+  #### 编码
+      1) 字符串形式的 ref  =>  存在效率问题，且过时
+  
+           <input ref="input1" />
+      
+      2) 回调形式的 ref
+  
+           <input ref={(c) => {this.input1 = c}} />
+         
+         产生问题：
+            更新过程中会被执行两次，第一次传入参数null，第二次会传入参数DOM元素
+            通过将ref的回调函数定义成class的绑定函数的方式可避免该问题
+      
+      3) createRef 创建 ref 容器
+
+            myRef = React.createRef()
+            <input ref={this.myRef} />
+
+  #### 事件处理
+      1) 通过 onXxx 属性指定事件处理函数（注意大小写）
+         
+         a. React 使用的是自定义（合成）事件，而不是使用的原生DOM事件
+         b. React 中的事件是通过事件委托方式处理的(委托给组件最外层的元素)
+
+      2) 通过 event.target 得到发生事件的DOM元素对象
 
 ### 生命周期函数
 
