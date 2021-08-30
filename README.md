@@ -1,4 +1,4 @@
-# React 复习
+# <img src="./src/assets/react.png" alt="react" style="zoom: 55%;" />**React 复习**
 
 ### 简介
     用于构建用户界面的JavaScript库
@@ -57,7 +57,7 @@
      必须有render
      必须有返回值
      this => 该组件的实例对象
-     
+
 ### State & Props & Refs 
 
 + ### state
@@ -65,7 +65,7 @@
   
       1).state是组件对象最重要的属性，值是对象(可包含多个key-value的组合)
       2).组件被称为状态机，通过更新组件的state来更新对象的页面显示(重新渲染组件)
-    
+  
   #### 注意
       1.组件中render方法中的this为组件实例对象
       2.组件自定义的方法中this为undefined
@@ -86,7 +86,7 @@
 
   #### 编码操作 
        1).内部读取某个属性值
-  
+      
           this.props.name
        
        2).对props中的属性值进行类型限制和必要性限制
@@ -94,18 +94,18 @@
           Person.propTypes = {
             name:React.PropTypes.string.isRequired
           }
-
+      
        3).扩展属性 : 将对象的所有属性通过props传递
           
           <Person {...person}/>
-
+      
        4).默认属性值
       
           Person.defaultProps = {
             age:18,
             sex:'male'
           }
-
+      
        5).组件类构造函数
           
           constructor(props){
@@ -119,11 +119,11 @@
 
   #### 编码
       1) 字符串形式的 ref  =>  存在效率问题，且过时
-  
+      
            <input ref="input1" />
       
       2) 回调形式的 ref
-  
+      
            <input ref={(c) => {this.input1 = c}} />
          
          产生问题：
@@ -131,7 +131,7 @@
             通过将ref的回调函数定义成class的绑定函数的方式可避免该问题
       
       3) createRef 创建 ref 容器
-
+      
             myRef = React.createRef()
             <input ref={this.myRef} />
 
@@ -140,7 +140,7 @@
          
          a. React 使用的是自定义（合成）事件，而不是使用的原生DOM事件
          b. React 中的事件是通过事件委托方式处理的(委托给组件最外层的元素)
-
+      
       2) 通过 event.target 得到发生事件的DOM元素对象
 
 ### 生命周期函数
@@ -158,7 +158,7 @@
         logo192/logo512
         manifest.json 应用加壳的配置文件
         robots.txt    爬虫协议文件
-
+    
     src --- 源码文件夹
         App.css      App组件的样式
         App.js       App组件
