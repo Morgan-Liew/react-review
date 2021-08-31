@@ -1,4 +1,4 @@
-# <img src="./src/assets/react.png" alt="react" style="zoom: 55%;" />**React 复习**
+# <img src="./src/assets/react.png" alt="react" style="zoom: 16%;" /> **React 复习**
 
 ### 简介
     用于构建用户界面的JavaScript库
@@ -142,8 +142,19 @@
          b. React 中的事件是通过事件委托方式处理的(委托给组件最外层的元素)
       
       2) 通过 event.target 得到发生事件的DOM元素对象
+### 受控和非受控组件
+
+#### 受控组件
+    数据输入改变状态
+#### 非受控组件
+    数据自取自用，无状态上改变
 
 ### 生命周期函数
+#### 理解
+    1.组件对象从创建到死亡会经历特定阶段
+    2.React组件包含一系列钩子函数(生命周期回调函数)，在特定的时刻调用
+    3.在定义组件时，在特定的生命周期回调函数中做特定的工作
+
 
 ### React Cli
     start： 开启服务器

@@ -5,11 +5,13 @@ import ClassDemo from "./components/ClassDemo";
 import Weather from "./components/Weather";
 import Person from "./components/Person";
 import RefDemo from "./components/RefDemo";
+import Login from "./components/Login";
 
 export default function App() {
   return (
     <div className="App">
       <Test />
+      <Login />
       <RefDemo />
       <Function />
       <ClassDemo/>
