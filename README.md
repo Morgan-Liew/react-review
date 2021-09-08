@@ -158,8 +158,6 @@
 
 #### 组件生命周期 (旧)
 ![alt 组件生命周期 (旧)](./src/assets/组件生命周期%20(旧).png)
-
-#### 组件生命周期 (新)
 1. **初始化阶段：** 由ReactDOM.render触发---初次渲染
 
    
@@ -177,10 +175,12 @@
       4.componentDidUpdate
 
 3. **卸载组件：** 由ReactDOM.unmountComponentAtNode触发
-   
+
 
       componentWillUnmount
 
+#### 组件生命周期 (新)
+![alt 组件生命周期 (新)](./src/assets/组件生命周期%20(新).png)
 
 ### React Cli
     start： 开启服务器
